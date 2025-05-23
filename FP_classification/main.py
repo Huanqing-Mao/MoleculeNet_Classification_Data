@@ -7,7 +7,7 @@ fp_keys = ["ecfp4", "ap", "tt", "rdkit", "maccs"]
 class_colname = "Class"
 
 # Get pre-processed data
-processed_dta_path = r"C:\Users\huanqing\Desktop\ARIA_Documents\Processed_data"
+processed_dta_path = r"C:\Users\huanqing\Desktop\ARIA_Documents\processed_data"
 df_lst, new_filenames = load_data(processed_dta_path)
 
 df_lst = [df_lst[0]] # for testing
