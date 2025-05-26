@@ -4,8 +4,8 @@ import os
 
 
 # Source raw data
-path = r"C:\Users\huanqing\Desktop\ARIA_Documents\prediction_dataset"
-new_directory = r"C:\Users\huanqing\Desktop\ARIA_Documents\Processed_data"
+path = "../prediction_dataset"
+new_directory = "../Processed_data"
 
 # Pre-process data
 raw_dta_lst, filenames = load_data(path)
