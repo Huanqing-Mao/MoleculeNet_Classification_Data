@@ -38,6 +38,7 @@ class Preprocessor:
         df[fp_key] = df[mol_colname].apply(lambda x: self.smiles_to_fp(x, fp_key))
         if drop_invalid:
             df = df[df[fp_key].notnull()].reset_index(drop=True)
+            df = df[df[self.class_colname].notnull()].reset_index(drop=True)
         return df
     
     def get_all_fps(self, raw_df, new_path):
