@@ -8,14 +8,10 @@ fp_keys = ["ecfp4", "ap", "tt", "rdkit", "maccs"]
 class_colname = "Class"
 
 # Get pre-processed data
-processed_dta_path = "../Processed_data"
+processed_dta_path = "./Processed_data"
 df_lst, new_filenames = load_data(processed_dta_path)
 
-df_lst = df_lst[len(df_lst) - 2: len(df_lst)] # for testing
-new_filenames = new_filenames[len(new_filenames) - 2: len(new_filenames)] # for testing
-output_path = "../eval_results"
-
-
+output_path = "./eval_results"
 for i in range(len(df_lst)):
     df = df_lst[i]
     output_dct = {}

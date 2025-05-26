@@ -4,8 +4,8 @@ import os
 
 
 # Source raw data
-path = "../prediction_dataset"
-new_directory = "../Processed_data"
+path = "./prediction_dataset"
+new_directory = "./Processed_data"
 
 # Pre-process data
 raw_dta_lst, filenames = load_data(path)
@@ -24,7 +24,7 @@ Class for sider: Hepatobiliary disorders
 The classes are randomly chosen.
 '''
 
-for i in range(len(raw_dta_lst) - 2, len(raw_dta_lst)):
+for i in range(len(raw_dta_lst)):
     raw_df = raw_dta_lst[i]
     filename = filenames[i]
 
